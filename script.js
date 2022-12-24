@@ -9,16 +9,6 @@ let arr = [
     { id: 3, name: "Karen", age: "19", profession: "admin" }
 ]
 
-// result.append(arr.jack);
-
-// arr.forEach((item)=>{
-//     let div = document.createElement("div");
-//     div.innerHTML = item;
-//     result.append(div);
-// });
-    
-
-
 function filterbyprofession() {
     reslt.innerHTML = "";
     let drpdwnValue = drpdwn.value;
@@ -28,20 +18,11 @@ function filterbyprofession() {
         return;
     }
 
-
-   /* arr.forEach((item) => {
-        if (item.profession === dropdownValue) {
-            let div = document.createElement("div");
-           // div.setAttribute("class");
-            div.innerText = item.id + ". Name: " + item.name + "  Profession: " + item.profession + "  Age: " + item.age;
-            result.append(div);
-        }
-    })//*/
     arr.forEach((item) => {
         if (item.profession === drpdwnValue) {
             let divElmnt = document.createElement("div");
 
-            //add border to values
+            //adding border to the values
             divElmnt.style.borderStyle = "solid";
             divElmnt.style.margin ="20px 10px";
             divElmnt.style.borderRadius ="5px";
@@ -53,13 +34,6 @@ function filterbyprofession() {
         }
     })
 
-
-
-
-
-
-
-
     console.log(arr);
 }
 
@@ -68,7 +42,6 @@ fltrbtn.addEventListener("click", filterbyprofession);
 let nameAdd = document.getElementById("name");
 let professionAdd = document.getElementById("profession");
 let ageAdd = document.getElementById("age");
-
 let btnAdd = document.getElementById("useradd");
 
 
@@ -76,17 +49,16 @@ function addUser() {
     let kname = nameAdd.value;
     let age = ageAdd.value;
     let prof = professionAdd.value;
-
     let x = arr.length;
     ++x;
 
     let crr = { id: x, name: `${kname}`, age: `${age}`, profession: `${prof}` }
-    if(kname !== "" && age !== "" && prof !== ""){
-        arr.push(crr);
-    }
-    else{
-        alert("fill complete detail.")
-    }
+        if(kname !== "" && age !== "" && prof !== ""){
+             arr.push(crr);
+            }
+            else{
+                alert("fill complete detail.")
+            }
 
     console.log(arr);
 
