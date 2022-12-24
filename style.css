@@ -1,0 +1,37 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+
+* {
+    font-family:'Times New Roman', Times, serif;
+    font-size: 28px;
+    background-color: rgb(5, 7, 5);
+    color: #FFFFFF;
+}
+
+.mainn {
+    margin: 70px 40px;
+}
+
+.Input {
+    display: inline-block;
+    justify-content: space-around;
+}
+
+#drpdwn {
+    width: 194px;
+    height: 56px;
+    margin: 38px 0px;
+}
+
+.buttoon {
+    width: 224px;
+    height: 54px;
+    color: rgb(215, 227, 235);
+    background-color: #0c7236;
+    margin: 29px 0px;
+    margin-bottom: 67px;
+}
+
+#user {
+    margin-top: 38px;
+    display:inline-block;
+}

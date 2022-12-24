@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>contest</title>
+</head>
+
+<body>
+    
+    <div class="mainn">
+        Filter ui cards via their profession<br />
+        <select name="drpdwn" id="drpdwn">
+            <option disabled selected value="profession">Profession</option>
+            <option value="developer">Developer</option>
+            <option value="admin">Admin</option>
+        </select> <br>
+
+        <div id="res"></div>
+
+        <button id="fltrbtn" class="buttoon">Filter</button><br />
+
+        Add a new user<br />
+
+        <div id="user">
+
+            <div class="Input">Enter Name<br />
+                <input type="text" id="name">
+            </div>
+
+            <div class="Input">Enter Profession<br />
+                <input type="text" id="profession">
+            </div>
+
+            <div class="Input">Enter Age<br />
+                <input type="text" id="age">
+            </div>
+
+        </div>
+        <button id="useradd" class="buttoon">Add User</button>
+    </div>
+
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>
