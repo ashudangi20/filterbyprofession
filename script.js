@@ -41,7 +41,9 @@ fltrbtn.addEventListener("click", filterbyprofession);
 
 let nameAdd = document.getElementById("name");
 let professionAdd = document.getElementById("profession");
+
 let ageAdd = document.getElementById("age");
+
 let btnAdd = document.getElementById("useradd");
 
 
@@ -53,12 +55,25 @@ function addUser() {
     ++x;
 
     let crr = { id: x, name: `${kname}`, age: `${age}`, profession: `${prof}` }
-        if(kname !== "" && age !== "" && prof !== ""){
-             arr.push(crr);
-            }
-            else{
-                alert("fill complete detail.")
-            }
+    if(kname == ""){
+        alert('fill complete detail.')
+    }else if(age == "" ){
+        alert('fill complete detail.')
+    }else if(age <=0){
+        alert('age should not be less than 1') 
+    }else if(prof == ""){
+        alert("fill complete detail.")
+    }else{
+        arr.push(crr);
+    }
+
+
+        // if(kname !== "" && age !== "" && prof !== ""){
+        //      arr.push(crr);
+        //     }
+        //     else{
+        //         alert("fill complete detail.")
+        //     }
 
     console.log(arr);
 
