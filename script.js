@@ -60,7 +60,7 @@ function addUser() {
     }else if(age == "" ){
         alert('fill complete detail.')
     }else if(age <=0){
-        alert('age should not be less than 1') 
+        alert('Age should not be less than 1') 
     }else if(prof == ""){
         alert("fill complete detail.")
     }else{
